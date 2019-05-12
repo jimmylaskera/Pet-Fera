@@ -14,14 +14,14 @@ class Animal
 		char m_sexo;
 		double m_tamanho;
 		string m_dieta;
-		int m_veterinario;
-		int m_tratador;
+		Vet m_veterinario;
+		Trat m_tratador;
 		string m_nome_batismo;
 
 	public:
 		Animal();
-		Animal(int id, string classe, string nomeC, char sexo, double tamanho,
-			string dieta, int veterinario, int tratador, string nomeB);
+		Animal(int id, string classe, string nome, string nomeC, char sexo, double tamanho,
+			string dieta, Vet veterinario, Trat tratador, string nomeB);
 		~Animal();
 };
 
@@ -29,7 +29,7 @@ class Anfibio: public Animal
 {
 	protected:
 		int m_total_mudas;
-		data m_ultima_muda;
+		int m_ultima_muda;      //precisa mudar para um tipo "data"
 	public:
 		Anfibio();
 		~Anfibio();
