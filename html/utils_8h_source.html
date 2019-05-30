@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto-LP1: Código-Fonte de inc/utils.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto-LP1
+   </div>
+   <div id="projectbrief">Um controle de restaurantes, cardápios e produtos.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">utils.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="utils_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iterator&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Item_8h.html">Item.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Category_8h.html">Category.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Menu_8h.html">Menu.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Seller_8h.html">Seller.h</a>&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//Função responsavel por exibir uma interdace simples de cabeçalho</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a7b226133eba40ed2a1d50b745b35b4a1">header</a>(std::string title);</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//Função responsavel por exibir uma interface de menu de opções</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a885611589f6294afada89fe88362e863">main_menu</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a54278ed1d065420ff9829e4646f232b1">options_loop</a>(std::list&lt; Seller &gt; &amp;V, <a class="code" href="classMenu.html">Menu</a> &amp;M);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//Função de cadastro de novos estabelecimentos</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a6a419eedc2852b8cb308060605dd5aaa">new_seller</a>(std::list&lt; Seller &gt; &amp;V);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a7cb55fc040920ad862d02f01ee0f893c">remove_seller</a>(std::list&lt; Seller &gt; &amp;V);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">//Função responsável por imprimir na tela os estabelecimentos cadastrados</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a4f8e2b64050e29da2e46d279d6279c9e">print_sellers</a>(std::list&lt; Seller &gt; &amp;V);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">// FUNÇÕES DE ITENS</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#ab3d30cd011a9da70ed8607c1b05cca7b">item_create</a>(std::list&lt; Category &gt; &amp;C);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a0a6c8676117abfc6d7e87594ca7eb121">item_remove</a>(std::list&lt; Category &gt; &amp;C);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// void item_print(Item i);</span></div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">// FUNÇÕES DE CATEGORIAS</span></div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a3030eea35fe5adc85bf1fdd1a243dd86">category_create</a>(<a class="code" href="classMenu.html">Menu</a> &amp;M);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a06ea39943eff1c0155a60dbc15e68519">category_remove</a>(<a class="code" href="classMenu.html">Menu</a> &amp;M);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a4e3976a8998cc9aabdd5250b28917330">category_print</a>(std::list&lt; Category &gt; &amp;V);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">// void category_print(std::list&lt; Category &gt; &amp;V, unsigned int target);</span></div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#af1c2b333d4276800c42a8235489cca98">print_category_items</a>(std::list&lt; Category &gt; C);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// void print_categoty(std::vector&lt; Category &gt; &amp;V);</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// void print_menu();</span></div><div class="ttc" id="utils_8h_html_a06ea39943eff1c0155a60dbc15e68519"><div class="ttname"><a href="utils_8h.html#a06ea39943eff1c0155a60dbc15e68519">category_remove</a></div><div class="ttdeci">void category_remove(Menu &amp;M)</div><div class="ttdoc">Remove uma categoria da lista do controle. </div><div class="ttdef"><b>Definition:</b> utils.cpp:141</div></div>
+<div class="ttc" id="utils_8h_html_ab3d30cd011a9da70ed8607c1b05cca7b"><div class="ttname"><a href="utils_8h.html#ab3d30cd011a9da70ed8607c1b05cca7b">item_create</a></div><div class="ttdeci">void item_create(std::list&lt; Category &gt; &amp;C)</div><div class="ttdoc">Adiciona um novo item a uma categoria de cardápio. </div><div class="ttdef"><b>Definition:</b> utils.cpp:164</div></div>
+<div class="ttc" id="Seller_8h_html"><div class="ttname"><a href="Seller_8h.html">Seller.h</a></div><div class="ttdoc">Classe que representa as informacoes de um estabelecimento. </div></div>
+<div class="ttc" id="Category_8h_html"><div class="ttname"><a href="Category_8h.html">Category.h</a></div><div class="ttdoc">Classe que guarda as categorias de cardapios. </div></div>
+<div class="ttc" id="utils_8h_html_a4f8e2b64050e29da2e46d279d6279c9e"><div class="ttname"><a href="utils_8h.html#a4f8e2b64050e29da2e46d279d6279c9e">print_sellers</a></div><div class="ttdeci">void print_sellers(std::list&lt; Seller &gt; &amp;V)</div><div class="ttdoc">Imprime todos os estabelecimentos disponíveis no momento. </div><div class="ttdef"><b>Definition:</b> utils.cpp:117</div></div>
+<div class="ttc" id="utils_8h_html_a885611589f6294afada89fe88362e863"><div class="ttname"><a href="utils_8h.html#a885611589f6294afada89fe88362e863">main_menu</a></div><div class="ttdeci">void main_menu()</div><div class="ttdoc">Imprime as opções do menu principal do programa. </div><div class="ttdef"><b>Definition:</b> utils.cpp:28</div></div>
+<div class="ttc" id="utils_8h_html_a54278ed1d065420ff9829e4646f232b1"><div class="ttname"><a href="utils_8h.html#a54278ed1d065420ff9829e4646f232b1">options_loop</a></div><div class="ttdeci">void options_loop(std::list&lt; Seller &gt; &amp;V, Menu &amp;M)</div><div class="ttdoc">Controle das ações disponíveis no programa. </div><div class="ttdef"><b>Definition:</b> utils.cpp:48</div></div>
+<div class="ttc" id="utils_8h_html_a7cb55fc040920ad862d02f01ee0f893c"><div class="ttname"><a href="utils_8h.html#a7cb55fc040920ad862d02f01ee0f893c">remove_seller</a></div><div class="ttdeci">void remove_seller(std::list&lt; Seller &gt; &amp;V)</div><div class="ttdoc">Remove um estabelecimento da lista do controle. </div><div class="ttdef"><b>Definition:</b> utils.cpp:97</div></div>
+<div class="ttc" id="utils_8h_html_af1c2b333d4276800c42a8235489cca98"><div class="ttname"><a href="utils_8h.html#af1c2b333d4276800c42a8235489cca98">print_category_items</a></div><div class="ttdeci">void print_category_items(std::list&lt; Category &gt; C)</div><div class="ttdoc">Exibe todas as categorias com seus respectivos itens. </div><div class="ttdef"><b>Definition:</b> utils.cpp:221</div></div>
+<div class="ttc" id="classMenu_html"><div class="ttname"><a href="classMenu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> Menu.h:18</div></div>
+<div class="ttc" id="Item_8h_html"><div class="ttname"><a href="Item_8h.html">Item.h</a></div><div class="ttdoc">Classe dos itens do cardapio. </div></div>
+<div class="ttc" id="utils_8h_html_a7b226133eba40ed2a1d50b745b35b4a1"><div class="ttname"><a href="utils_8h.html#a7b226133eba40ed2a1d50b745b35b4a1">header</a></div><div class="ttdeci">void header(std::string title)</div><div class="ttdoc">Função auxiliar que gera um título para funções que printam algo na tela, como o menu, ou uma lista. </div><div class="ttdef"><b>Definition:</b> utils.cpp:7</div></div>
+<div class="ttc" id="utils_8h_html_a4e3976a8998cc9aabdd5250b28917330"><div class="ttname"><a href="utils_8h.html#a4e3976a8998cc9aabdd5250b28917330">category_print</a></div><div class="ttdeci">void category_print(std::list&lt; Category &gt; &amp;V)</div><div class="ttdoc">Imprime todas as categorias disponíveis, sem exibir os seus itens. </div><div class="ttdef"><b>Definition:</b> utils.cpp:152</div></div>
+<div class="ttc" id="utils_8h_html_a0a6c8676117abfc6d7e87594ca7eb121"><div class="ttname"><a href="utils_8h.html#a0a6c8676117abfc6d7e87594ca7eb121">item_remove</a></div><div class="ttdeci">void item_remove(std::list&lt; Category &gt; &amp;C)</div><div class="ttdoc">Remove um item de uma categoria de cardápio. </div><div class="ttdef"><b>Definition:</b> utils.cpp:194</div></div>
+<div class="ttc" id="utils_8h_html_a3030eea35fe5adc85bf1fdd1a243dd86"><div class="ttname"><a href="utils_8h.html#a3030eea35fe5adc85bf1fdd1a243dd86">category_create</a></div><div class="ttdeci">void category_create(Menu &amp;M)</div><div class="ttdoc">Adiciona uma nova categoria à lista do controle. </div><div class="ttdef"><b>Definition:</b> utils.cpp:128</div></div>
+<div class="ttc" id="utils_8h_html_a6a419eedc2852b8cb308060605dd5aaa"><div class="ttname"><a href="utils_8h.html#a6a419eedc2852b8cb308060605dd5aaa">new_seller</a></div><div class="ttdeci">void new_seller(std::list&lt; Seller &gt; &amp;V)</div><div class="ttdoc">Adiciona um novo estabelecimento à lista do controle. </div><div class="ttdef"><b>Definition:</b> utils.cpp:79</div></div>
+<div class="ttc" id="Menu_8h_html"><div class="ttname"><a href="Menu_8h.html">Menu.h</a></div><div class="ttdoc">A ideia inicial era fazer dessa classe um link entre um estabelecimento e as categorias que o mesmo d...</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

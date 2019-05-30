@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto-LP1: Código-Fonte de inc/readfile.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projeto-LP1
+   </div>
+   <div id="projectbrief">Um controle de restaurantes, cardápios e produtos.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">readfile.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="readfile_8h.html">Vá para a documentação desse arquivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef READFILE_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define READFILE_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Item_8h.html">Item.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Category_8h.html">Category.h</a>&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Seller_8h.html">Seller.h</a>&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Menu_8h.html">Menu.h</a>&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">void</span> <a class="code" href="readfile_8h.html#adc2507efea5b86c53d9aa9ae42c7c006">read_file</a>(std::list&lt;Seller&gt; &amp;s, <a class="code" href="classMenu.html">Menu</a> &amp;M);  <span class="comment">//adiciona as informações do arquivo aos vetores do programa</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">void</span> <a class="code" href="readfile_8h.html#acf58d0132d9faa2482325ad0a898bdb9">save_file</a>(std::list&lt;Seller&gt; s, <a class="code" href="classMenu.html">Menu</a> M);    <span class="comment">//salva as informações dos vetores no arquivo</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="Seller_8h_html"><div class="ttname"><a href="Seller_8h.html">Seller.h</a></div><div class="ttdoc">Classe que representa as informacoes de um estabelecimento. </div></div>
+<div class="ttc" id="Category_8h_html"><div class="ttname"><a href="Category_8h.html">Category.h</a></div><div class="ttdoc">Classe que guarda as categorias de cardapios. </div></div>
+<div class="ttc" id="readfile_8h_html_adc2507efea5b86c53d9aa9ae42c7c006"><div class="ttname"><a href="readfile_8h.html#adc2507efea5b86c53d9aa9ae42c7c006">read_file</a></div><div class="ttdeci">void read_file(std::list&lt; Seller &gt; &amp;s, Menu &amp;M)</div><div class="ttdoc">Funcao que atualiza as informacoes no programa ao inicio da execucao, lendo o arquivo &quot;data...</div><div class="ttdef"><b>Definition:</b> readfile.cpp:13</div></div>
+<div class="ttc" id="classMenu_html"><div class="ttname"><a href="classMenu.html">Menu</a></div><div class="ttdef"><b>Definition:</b> Menu.h:18</div></div>
+<div class="ttc" id="Item_8h_html"><div class="ttname"><a href="Item_8h.html">Item.h</a></div><div class="ttdoc">Classe dos itens do cardapio. </div></div>
+<div class="ttc" id="Menu_8h_html"><div class="ttname"><a href="Menu_8h.html">Menu.h</a></div><div class="ttdoc">A ideia inicial era fazer dessa classe um link entre um estabelecimento e as categorias que o mesmo d...</div></div>
+<div class="ttc" id="readfile_8h_html_acf58d0132d9faa2482325ad0a898bdb9"><div class="ttname"><a href="readfile_8h.html#acf58d0132d9faa2482325ad0a898bdb9">save_file</a></div><div class="ttdeci">void save_file(std::list&lt; Seller &gt; s, Menu M)</div><div class="ttdoc">Funcao que atualiza o arquivo, ou cria um novo no caso de ser a primeira execucao do programa...</div><div class="ttdef"><b>Definition:</b> readfile.cpp:62</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>
